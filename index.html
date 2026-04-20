@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy · Face Sculptor</title>
+<meta name="description" content="Privacy policy for Face Sculptor, an on-device facial feature visualization app by LEFORT Technologies.">
+<style>
+  :root {
+    --bg: #0d1b2a;
+    --surface: #ffffff;
+    --text: #1a1a1a;
+    --text-muted: #555;
+    --accent: #1b4965;
+    --border: #e5e7eb;
+    --code-bg: #f4f4f4;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    color: var(--bg);
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin: 0;
+  }
+  h2 {
+    margin: 36px 0 12px;
+    font-size: 19px;
+    color: var(--accent);
+    letter-spacing: -0.005em;
+  }
+  h3 {
+    margin: 24px 0 8px;
+    font-size: 16px;
+    color: var(--text);
+  }
+  p, li { font-size: 15px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .callout {
+    background: #f1f7fb;
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  .callout strong { color: var(--accent); }
+  code {
+    background: var(--code-bg);
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+  @media (max-width: 600px) {
+    .container { padding: 32px 18px 60px; }
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<main class="container">
+
+<header>
+  <h1>Privacy Policy — Face Sculptor</h1>
+  <p class="meta">
+    Published by <strong>LEFORT Technologies</strong> ·
+    Effective 20 April 2026 ·
+    Last updated 20 April 2026
+  </p>
+</header>
+
+<div class="callout">
+  <strong>Short version:</strong> Face Sculptor runs entirely on your phone.
+  We do not collect, store, upload, or share your photos, your face data,
+  or any information about how you use the app. There are no accounts,
+  no analytics, no advertising, and no tracking.
+</div>
+
+<h2>1. Who we are</h2>
+<p>
+  Face Sculptor is an Android application published by
+  <strong>LEFORT Technologies</strong> ("we", "us", "our").
+  You can contact us at
+  <a href="mailto:leforttech@gmail.com">leforttech@gmail.com</a>
+  for any privacy question, concern, or request.
+</p>
+
+<h2>2. What Face Sculptor does</h2>
+<p>
+  Face Sculptor is a visualization tool that lets you upload a photo of a
+  face and adjust individual facial features (eyes, nose, jaw, brow, and
+  others) using sliders. All of this happens inside the app on your
+  device. The app is intended for personal visualization and is not a
+  medical device or a substitute for professional consultation.
+</p>
+
+<h2>3. What information we collect</h2>
+<p>
+  <strong>We do not collect any personal information.</strong> To be
+  specific:
+</p>
+<ul>
+  <li>We do not collect your name, email, phone number, or account information, because the app has no sign-in or account system.</li>
+  <li>We do not collect or receive the photos you upload into the app.</li>
+  <li>We do not collect or receive the facial-landmark data that the app detects from your photos.</li>
+  <li>We do not collect device identifiers, advertising IDs, or location data.</li>
+  <li>We do not use analytics SDKs, crash-reporting SDKs, or advertising SDKs.</li>
+</ul>
+
+<h2>4. How your photos are handled</h2>
+<p>
+  When you upload a photo into Face Sculptor, the photo is loaded into the
+  app's memory on your device. Face detection and feature adjustment are
+  performed locally in the app using a machine-learning library
+  (<code>face-api.js</code>) that runs on your device. Your photos and any
+  data derived from them (such as facial-landmark coordinates) are
+  <strong>never uploaded to our servers or to any third party</strong>.
+</p>
+<p>
+  If you choose to save an edited image using the "Save" function, the
+  image is written to your device's own photo gallery through standard
+  Android storage APIs. Nothing leaves your device as a result of that
+  action.
+</p>
+
+<h2>5. Network activity</h2>
+<p>
+  Face Sculptor does make one type of network request, and we want to be
+  transparent about it: when you first launch the app, it downloads a set
+  of pre-trained machine-learning model files (approximately 10&nbsp;MB in
+  total) from a content-delivery server controlled by LEFORT Technologies
+  and hosted on Cloudflare R2. These files are read-only weights that the
+  app needs in order to detect facial landmarks on your device. The
+  download consists of standard HTTPS GET requests. No information about
+  you, your photos, or your usage is sent as part of, or alongside, these
+  requests. Once the files are downloaded, they are cached locally and the
+  app may not need to contact the network again on subsequent launches.
+</p>
+<p>
+  Beyond this initial model download, Face Sculptor does not make any
+  outbound network calls.
+</p>
+
+<h2>6. Permissions the app requests</h2>
+<p>
+  Face Sculptor requests only the minimum Android permissions required to
+  function:
+</p>
+<ul>
+  <li><strong>Photo / media access</strong> — so you can select a photo from your gallery to load into the app.</li>
+  <li><strong>Camera</strong> — if and only if you choose to take a new photo directly from within the app.</li>
+  <li><strong>Write to gallery / photos</strong> — if and only if you choose to save an edited image back to your device.</li>
+</ul>
+<p>
+  These permissions are used exclusively for the purposes described above
+  and are not used to collect, transmit, or share any data.
+</p>
+
+<h2>7. Children</h2>
+<p>
+  Face Sculptor is intended for users who are 18 years of age or older.
+  The app is not directed to children, and we do not knowingly collect
+  information from anyone, including children, because the app does not
+  collect information at all. If you are under 18, please do not use
+  Face Sculptor.
+</p>
+
+<h2>8. Third-party services</h2>
+<p>
+  Face Sculptor uses the open-source <code>face-api.js</code> library
+  (MIT-licensed) locally on your device to detect facial landmarks. The
+  library runs entirely inside the app on your device and does not
+  transmit any data to its original authors or to any third party. Model
+  weights are served from our own Cloudflare R2 bucket as described in
+  Section 5.
+</p>
+<p>
+  Face Sculptor does not use Firebase, Google Analytics, Google AdMob, Meta
+  / Facebook SDKs, TikTok SDKs, Sentry, Crashlytics, Mixpanel, Amplitude,
+  PostHog, or any similar analytics, advertising, or tracking service.
+</p>
+
+<h2>9. Your rights</h2>
+<p>
+  Because we do not collect or store any personal information about you,
+  we have no personal data to access, correct, export, or delete. You can
+  remove Face Sculptor from your device at any time through the standard
+  Android uninstall process, which also removes any locally cached model
+  files and any in-app state associated with the app.
+</p>
+
+<h2>10. Changes to this policy</h2>
+<p>
+  If we change how Face Sculptor handles data in a future version — for
+  example, if a future release introduces optional analytics, user
+  accounts, or cloud features — we will update this policy before that
+  version is released, note the change in the release notes, and update
+  the "Last updated" date at the top of this document. Where the change is
+  material, we will also update the Google Play Data Safety section for
+  the app. Your continued use of the app after such changes indicates
+  acceptance of the updated policy.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+  For any question, concern, or request relating to this policy or to
+  Face Sculptor, please contact:
+</p>
+<p>
+  LEFORT Technologies<br>
+  <a href="mailto:leforttech@gmail.com">leforttech@gmail.com</a>
+</p>
+
+<footer>
+  © 2026 LEFORT Technologies. All rights reserved.
+</footer>
+
+</main>
+</body>
+</html>
